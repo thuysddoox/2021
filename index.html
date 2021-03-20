@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font-icon/fontawesome-free-5.15.2-web/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <!--Start navigation bar-->
+        <header>
+            <div id="navbar">
+                <h2 id='logo'>2021</h2>
+                <ul>
+                    <li class="tab" id="init" onclick="showHome()"><a><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li class="tab" onclick="showWish()"><a><i class="fas fa-praying-hands"></i><span>Wishes</span></a></li>
+                    <li class="tab" onclick="showFirework()"><a><i class="fas fa-bomb"></i><span>Firework</span></a></li>
+                    <li class="tab" onclick="showEntertain()"><a><i class="fas fa-folder"></i><span>Entertain</span></a></li>
+                    <li class="tab" onclick="showBlame()"><a><i class="fas fa-flushed"></i><span>Comments</span></a></li>
+
+                </ul>
+
+                <div id="music" onclick="runMusic()">
+                    <div id="playerPause">
+                        <img src="assets/images/vinyl.png" alt="MusicPlayer"></div>
+                    <div id="playerRun">
+                        <img src="assets/images/vinyl.png" alt="MusicPlayer"></div>
+                    <span id="pausems">Click to order 1000 VND music</span>
+                    <span id="runms">Running... <br>Click to pause</span>
+                    <audio id="musicPl" preload="none" controls="controls" loop>
+                        <source src="./assets/mp3/Melancholy.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="readme">
+                    <div class="note" onclick="showReadMe()">
+                        <img src="assets/images/exclamation-mark.png" alt="Warning"><span>ReadMe</span>
+                    </div>
+                    <p class="text">
+                        Vì kĩ năng và trình độ của tôi còn kém nên sẽ có những vấn đề xảy ra mà tôi chưa kiểm soát và khắc phục được. Xin lỗi vì sự bất tiện này!
+                    </p>
+                </div>
+
+
+            </div>
+        </header>
+
+        <!--Start MainFrameContent-->
+        <div id="mainframe">
+            <!--Start HOME-->
+            <div id="home">
+
+                <div class="content content1">
+                    <img src="./assets/images/p1.png" alt="thuysddoox">
+                </div>
+                <div class="content content2">
+                    <img src="./assets/images/p2.png" alt="thuysddoox">
+                </div>
+                <div class="content content3">
+                    <img src="./assets/images/p3.png" alt="thuysddoox">
+                </div>
+                <div class="ps">Có thể những gì cậu nhìn thấy rất trẻ con rất đơn giản và chẳng có gì đặc biệt tuy nhiên tớ thời gian và công sức để tạo ra nó. Tớ còn rất kém nên tớ chỉ làm theo những gì tớ biết và mọi thứ đều dựa trên quan điểm cá nhân của tớ. Và tớ
+                    cũng chưa thể kiểm soát được hết mọi trường hợp ( trên laptop thì có vẻ sẽ ổn hơn khi nhìn trên điện thoại). Tất cả đều do sự ngu dốt và lười biếng tớ. Tớ xin nhận mọi gạch đá ở đây (click vào icon) ->
+                    <div onclick="showBlame()"><i class="fas fa-flushed"></i></div>
+                </div>
+
+            </div>
+            <!--Start WISHES-->
+            <div id="wish">
+                <div class="title">
+                    <table style="width:80%">
+                        <tr>
+                            <td>B</td>
+                            <td>E</td>
+                            <td>S</td>
+                            <td>T</td>
+                            <td id="space" style="margin-left: 16px ">W</td>
+                            <td>I</td>
+                            <td>S</td>
+                            <td>H</td>
+                            <td id="space" style="margin-left: 16px">F</td>
+                            <td>O</td>
+                            <td>R</td>
+                            <td id="space" style="margin-left: 16px ">Y</td>
+                            <td>O</td>
+                            <td>U</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="wishescard">
+                    <div id="iconcard">
+                        <div class="postbox">
+                            <p>ở đây có một bức thư</p>
+                            <img src="./assets/images/postbox.png" alt="PostBox"></div>
+                        <div class="btn">
+                            <div id="takeit" onclick="takeLetter()">Lấy thư</div>
+                            <div id="openletter" onclick="openLetter()">Mở thư</div>
+                        </div>
+                        <div><img id="letterclose" src="./assets/images/letterr.png" alt="Letter"></div>
+                        <div><img id="letter" src="./assets/images/letterr.png" alt="Letter"></div>
+                        <div><img id="letteropen" src="./assets/images/letter.png" alt="Letter"></div>
+
+                    </div>
+                    <div class="contentcard">
+                        <p>Thật tuyệt khi chúng ta lại gặp nhau ở đây và bạn lại đang đọc những thứ có thể coi là nhảm nhí này! Một lần nữa cảm ơn bạn vì đã dành nhiều thời gian cho những thứ nhảm nhí của tôi đến vậy! </p>
+                        <p>Những thứ mà tôi nói là nhảm nhí kia thực ra đối với tôi lại không quá nhảm nhí vì tôi đã đầu tư cả thời gian và chất xám vào nó mà <i class="far fa-frown"></i> và chẳng ai điên mà đi đầu tư vào một thứ nhảm nhí cả. Nhưng sự thật
+                            thì tôi vẫn cảm thấy nó khá là nhảm nhí chắc tại nó nhảm nhí thật và điều đó đồng nghĩa với việc tôi không bình thường <i class="far fa-meh-rolling-eyes"></i>.</p>
+                        <p>Có vẻ tôi đi hơi xa. Chúng ta quay đầu đi lại đồng thời quét mắt đọc lại từ đầu nhé! &#8617;(to be continued)</p>
+                        <div id='next'>
+                            <p>Đùa thôi <i class="far fa-grin-squint"></i>. <br> Thực ra những gì mà tôi sắp nói (chính xác hơn là gõ) có lẽ sẽ không phải là BEST WISH nhưng nó là BEST WISH của tôi FOR YOU.Nó không đơn giản chỉ là một lời chúc mừng năm mới
+                                vì: đơn giản nó chỉ là lời chúc năm mới nhưng lại không đơn giản là lời chúc năm mới và hiểu theo cách phức tạp thì nó đơn giản chỉ là một lời chúc (hahaa...) Thành phần cấu tạo của nó gồm 59% chân thành, 20% chất xám và
+                                21% thời gian, không chứa các loại tạp chất độc hại khác (0% văn mẫu).</p>
+                            <p>Hãy chuẩn bị một tinh thần thép, một cái đầu lạnh và một trái tim tràn đầy yêu thương để cảm nhận lời chúc của tôi nhé!</p>
+                            <p id="nhan" onclick="showNhanText()"><a style="text-decoration: none;color:white;" href="#nhantext">Nhận lời chúc</a></p>
+                            <div class="pad" style="height: 50px;width: 100%;"></div>
+
+                            <div id="nhantext">
+                                <p> HAPPY NEW YEAR!!!</p>
+                                <p id="nghiemtuc" onclick="showNgiemtucText()">Nghiêm túc nào</p>
+                                <p class="hidden" onclick="showNhanText()">Hidden</p>
+                                <div id="nghiemtuctext">Dù chúng ta đã từng gặp nhau hay chưa từng gặp nhau, dù chúng ta đã từng nói chuyện hay chưa từng nói chuyện, dù chúng có thật sự quen biết nhau hay không thì cũng hi vọng bạn cũng như tôi, sắp tới chúng ta sẽ có một trải
+                                    nghiệm 365 ngày thật sự ý nghĩa. Hi vọng bạn và tôi sẽ có một sức khỏe ổn định thậm chí tốt hơn (tôi bắt đầu cảm nhận được triệu chứng mắt mờ lưng đau, trí nhớ suy giảm, chậm chạp, cảm thấy mình không còn bẻ gãy được
+                                    sừng trâu như tuổi 17 nữa, buồn thật sự). Hãy tự chăm sóc thật tốt cho bản thân nhé, vì sao thì chắc bạn cũng tự biết rồi đấy. Chúc bạn sẽ nhiều vui vẻ hơn là buồn bã(nếu bạn buồn thì bạn chỉ cần vui thôi là sẽ không
+                                    buồn, hứa, nhiều hạnh phúc và hạn chế đau khổ vì mọi chuyện đã xẩy ra bạn đau khổ mấy cũng không hạnh phúc lên được). Mong bạn sẽ cứng cỏi và lì lợm trước những trận ẩu đả đụng độ với cuộc đời (bí quyết là hãy ăn thật
+                                    nhiều để tăng độ dày lớp mỡ bạn sẽ đỡ đau hơn khi va đập đó. Mình đoán thế thôi hì.). Đặc biệt hãy luôn suy nghĩ và hành động tích cực nhé!
+                                    <p>Cuối cùng chúc chúng ta thật nhiều tiền vì nhiều tiền để mình làm được thật là nhiều điều thần kì ya.ya...!</p>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <p style="margin-top: 8px;"> &nbsp;&nbsp;&nbsp;&nbsp;Best &hearts;,<br>thuysddoox</p>
+                                        <p class="hidden" onclick="showNgiemtucText()">Hidden</p>
+
+                                    </div>
+                                    <div class="pad" style="height: 100px;width: 100%;"></div>
+                                </div>
+
+                            </div>
+
+                            <div id="end">
+                                <p>Gõ xong bức thư cảm thấy độ mất dạy tăng 2021% và độ xàm tăng 2020%. Xin lỗi vì sự tiến bộ vượt bậc này!</p>
+                                <p style="margin-top: 8px;margin-bottom: 100px;"> &nbsp;&nbsp;&nbsp;&nbsp;Best &hearts;,<br>thuysddoox</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Start FIREWORK-->
+            <div id="firework" style=" height: 100vh;">
+                <h3 style="padding:16px;">FIREWORK không phải do tớ tạo ra. Tớ đã tìm thấy và thấy nó khá hay nên muốn gửi đến cậu. Nó sẽ vô cùng hợp lí nếu tớ hoàn thành trước đêm giao thừa. Tuy hơi muộn nhưng nếu tò mò cậu có thể xem ở đây.</h3>
+                <div class="btn">
+                    <a href="./assets/js/firework.html" style="text-decoration: none; color: white;">
+                        <h3>Firework</h3>
+                    </a>
+                </div>
+            </div>
+            <!--Start ENTERTAIN-->
+            <div id="entertain" style=" height: 100vh;">
+                <h3 style="text-align: center; padding: 0px 16px;font-family:  'Chakra Petch', sans-serif; margin-top:15%;">Chức năng này chưa được phát triển! Xin lỗi vì sự lười biếng này!</h3>
+            </div>
+            <!--Start BLAME-->
+            <div id="blame">
+                <div id="iconcmd" class="fix" onclick="showCmd()"><img src="./assets/images/coding.png" alt=""></div>
+
+                <div id="ufo" class="fix">
+                    <div class="uf "> <img src="./assets/images/ufo.png" alt=""></div>
+                    <div class="alien"> <img class="alien" src="./assets/images/alien1.png" alt=""></div>
+                </div>
+                <div class="astro1 fix"><img src="./assets/images/astronaut (1).png" alt=""></div>
+                <div class="astro2 fix"><img src="./assets/images/astronaut (2).png" alt=""></div>
+                <div class="earth fix"><img src="./assets/images/globe.png" alt=""></div>
+                <div class="mon fix"><img src="./assets/images/monster.png" alt=""></div>
+                <div class="ali fix"><img src="./assets/images/alien.png" alt=""></div>
+                <div class="alired fix"><img src="./assets/images/ufo (2).png" alt=""></div>
+                <div class="spaceship fix"><img src="./assets/images/spaceship.png" alt=""></div>
+                <div class="mon1 fix"><img src="./assets/images/monster1.png" alt=""></div>
+                <div class="mini fix"><img src="./assets/images/minion.png" alt=""></div>
+                <div class="mon3 fix"><img src="./assets/images/monster3.png" alt=""></div>
+                <div class="mete fix stt1"><img src="./assets/images/asteroid1.png" alt=""> </div>
+                <div class="mete fix stt2"><img src="./assets/images/asteroid2.png" alt=""> </div>
+                <div class="mete fix stt3"><img src="./assets/images/asteroid3.png" alt=""> </div>
+                <div class="mete fix stt4"><img src="./assets/images/asteroid1.png" alt=""> </div>
+                <div class="mete fix stt5"><img src="./assets/images/asteroid2.png" alt=""> </div>
+                <div class="mete fix stt6"><img src="./assets/images/asteroid3.png" alt=""> </div>
+                <div class="mete fix stt7"><img src="./assets/images/asteroid.png" alt=""> </div>
+                <div class="mete fix stt8"><img src="./assets/images/asteroid1.png" alt=""> </div>
+                <div class="mete fix stt9"><img src="./assets/images/asteroid2.png" alt=""> </div>
+                <div class="mete fix stt10"><img src="./assets/images/asteroid.png" alt=""> </div>
+                <div class="mete fix stt11"><img src="./assets/images/asteroid.png" alt=""> </div>
+                <div class="mete fix stt12"><img src="./assets/images/asteroid2.png" alt=""> </div>
+
+                <div class="content">
+                    <div class="intro">
+                        <div id="introbar">
+                            <img src="./assets/images/coding.png" alt=""> <span> Command Prompt</span>
+                            <i class="fas fa-times btnclose" onclick="showCmd()"></i>
+                        </div>
+                        <div style="padding:4px">
+                            <p>Microsoft Windows [Version 10.0.18363.1198] <br> (c) 2019 Microsoft Corporation. All rights reserved.</p>
+                            <img id="av" style="margin:0 auto" src="./assets/images/yoga.png" alt="">
+                            <p>C:\thuysddoox\Message></div>
+                        <div class="introcontent"></div>
+
+                    </div>
+
+
+                    <div id="btncmt" onclick="showFormCmt()"><a href="#formcmt" style="text-decoration: none;color:white">Tát vào mặt tớ nhé!</a> </div>
+                    <div id="formcmt" class="fix">
+                        <div class="formbar">
+                            <h3> Hãy viết bất cứ thứ gì bạn muốn nhé! </h3><i style="margin-right:8px" class="fas fa-exclamation-triangle"></i>Năm mới tích đức tích phúc! </div>
+                        <div class="formct">
+                            <form id="enter" method="POST" action="./assets/database/action.php">
+                                <textarea name="comment" id="cmt" rows="10" form="enter" value="" placeholder="Viết ở đây..."></textarea>
+                                <input type="text" value="" name="name" id="user" placeholder="Cho tôi biết bạn là ai nếu muốn">
+                                <button id="slap">Tát<img src="./assets/images/hi.png" alt=""></button>
+                                <div id="clcmt" onclick="deleteFormcmt()">Bỏ qua</div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div id="slapedform" class="fix">
+                        <div class="bar">
+                            <i class="fas fa-times btnclose" onclick="showSlapedFform()"></i>
+                        </div>
+                        <div><img src="./assets/images/physical-abuse.png" alt=""></div>
+                        <div><img src="./assets/images/check.png" alt=""></div>
+                        <h3 style="padding: 0px 16px">Bạn đã thành công tát vào mặt tớ</h3>
+                        <h3 style="padding: 0px 16px">Tớ rất trân trọng điều này vì nó sẽ có thể làm tớ trở nên tốt hơn và vì cậu đã quan tâm tới tớ! Gửi lời cảm ơn sâu sắc đến cậu!</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

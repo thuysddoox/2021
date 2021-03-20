@@ -1,0 +1,20 @@
+#home {
+    display: none;
+}
+
+#init {
+    background-Color: "#fcfcfc00";
+    color: "#a8abbb";
+}
+
+#blame {
+    display: block;
+}
+
+#slapedform {
+    display: block;
+}
+
+#formcmt {
+    display: none;
+}
